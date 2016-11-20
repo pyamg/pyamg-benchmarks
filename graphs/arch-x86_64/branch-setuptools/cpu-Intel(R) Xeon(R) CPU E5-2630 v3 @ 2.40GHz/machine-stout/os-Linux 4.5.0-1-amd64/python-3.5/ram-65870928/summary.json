@@ -1,0 +1,32 @@
+[
+    {
+        "change_rev": null, 
+        "idx": null, 
+        "last_err": 0.0, 
+        "last_rev": 1179, 
+        "last_value": 561213440.0, 
+        "name": "bench_poisson.PeakMemSuite.peakmem_setup", 
+        "pretty_name": "bench_poisson.PeakMemSuite.peakmem_setup", 
+        "prev_value": null
+    }, 
+    {
+        "change_rev": null, 
+        "idx": null, 
+        "last_err": 0.0, 
+        "last_rev": 1179, 
+        "last_value": 22.783965905000002, 
+        "name": "bench_poisson.TimeSuite.time_setup", 
+        "pretty_name": "bench_poisson.TimeSuite.time_setup", 
+        "prev_value": null
+    }, 
+    {
+        "change_rev": null, 
+        "idx": null, 
+        "last_err": 0.0, 
+        "last_rev": 1179, 
+        "last_value": 4.592353636000002, 
+        "name": "bench_poisson.TimeSuite.time_solve", 
+        "pretty_name": "bench_poisson.TimeSuite.time_solve", 
+        "prev_value": null
+    }
+]

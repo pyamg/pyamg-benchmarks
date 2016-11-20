@@ -1,0 +1,160 @@
+{
+    "benchmarks": {
+        "bench_poisson.PeakMemSuite.peakmem_setup": {
+            "code": "def peakmem_setup(self):\n    ml = pyamg.smoothed_aggregation_solver(self.A, **self.settings)\n", 
+            "name": "bench_poisson.PeakMemSuite.peakmem_setup", 
+            "param_names": [], 
+            "params": [], 
+            "pretty_name": "bench_poisson.PeakMemSuite.peakmem_setup", 
+            "timeout": 60.0, 
+            "type": "peakmemory", 
+            "unit": "bytes"
+        }, 
+        "bench_poisson.TimeSuite.time_setup": {
+            "code": "def time_setup(self):\n    ml = pyamg.smoothed_aggregation_solver(self.A, **self.settings)\n", 
+            "goal_time": 2.0, 
+            "name": "bench_poisson.TimeSuite.time_setup", 
+            "number": 0, 
+            "param_names": [], 
+            "params": [], 
+            "pretty_name": "bench_poisson.TimeSuite.time_setup", 
+            "repeat": 0, 
+            "timeout": 60.0, 
+            "type": "time", 
+            "unit": "seconds"
+        }, 
+        "bench_poisson.TimeSuite.time_solve": {
+            "code": "def time_solve(self):\n    x = self.ml.solve(self.b, x0=self.x0,\n                      tol=1e-08, maxiter=100, cycle='V', accel=None)\n", 
+            "goal_time": 2.0, 
+            "name": "bench_poisson.TimeSuite.time_solve", 
+            "number": 0, 
+            "param_names": [], 
+            "params": [], 
+            "pretty_name": "bench_poisson.TimeSuite.time_solve", 
+            "repeat": 0, 
+            "timeout": 60.0, 
+            "type": "time", 
+            "unit": "seconds"
+        }
+    }, 
+    "graph_param_list": [
+        {
+            "arch": "x86_64", 
+            "branch": "setuptools", 
+            "cpu": "Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz", 
+            "machine": "stout", 
+            "os": "Linux 4.5.0-1-amd64", 
+            "python": "3.5", 
+            "ram": "65870928"
+        }, 
+        {
+            "arch": "x86_64", 
+            "branch": "setuptools", 
+            "cpu": "Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz", 
+            "machine": "stout", 
+            "os": "Linux 4.5.0-1-amd64", 
+            "python": "2.7", 
+            "ram": "65870928"
+        }
+    ], 
+    "hash_length": 7, 
+    "machines": {
+        "stout": {
+            "arch": "x86_64", 
+            "cpu": "Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz", 
+            "machine": "stout", 
+            "os": "Linux 4.5.0-1-amd64", 
+            "ram": "65870928", 
+            "version": 1
+        }
+    }, 
+    "pages": [
+        [
+            "", 
+            "Grid view", 
+            "Display as a agrid"
+        ], 
+        [
+            "summarylist", 
+            "List view", 
+            "Display as a list"
+        ], 
+        [
+            "regressions", 
+            "Show regressions", 
+            "Display information about recent regressions"
+        ]
+    ], 
+    "params": {
+        "arch": [
+            "x86_64"
+        ], 
+        "branch": [
+            "setuptools"
+        ], 
+        "cpu": [
+            "Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz"
+        ], 
+        "machine": [
+            "stout"
+        ], 
+        "os": [
+            "Linux 4.5.0-1-amd64"
+        ], 
+        "python": [
+            "2.7", 
+            "3.5"
+        ], 
+        "ram": [
+            "65870928"
+        ]
+    }, 
+    "project": "pyamg", 
+    "project_url": "https://github.com/pyamg/pyamg", 
+    "revision_to_date": {
+        "570": 1296140788000, 
+        "647": 1373302080000, 
+        "703": 1375113354000, 
+        "779": 1421708654000, 
+        "857": 1423857758000, 
+        "893": 1447098493000, 
+        "958": 1448116113000, 
+        "979": 1448161302000, 
+        "1006": 1450060121000, 
+        "1153": 1478575886000, 
+        "1159": 1478866765000, 
+        "1179": 1479651114000
+    }, 
+    "revision_to_hash": {
+        "570": "be3b897d4dbfde2cbe942232f342f0df0cfb5ecb", 
+        "647": "44e7fe8cf320e2f2eda90eea4eefb1856255be6f", 
+        "703": "2bed0634b610afa359071cb0a8dc819a24639ba8", 
+        "779": "f31e6d83f1ed0f3134853ddb059ed93770c0e3cd", 
+        "857": "b1c38ebc4032fc00461fa28585dd8303babd8918", 
+        "893": "cb309db1ecf1be218c98b4a0ef60f36d25d45b20", 
+        "958": "031ee96e6efb5254cae01c33b034dda478e79d04", 
+        "979": "9af2b42aae146aab11a32f43e837e7523f1e772f", 
+        "1006": "fd7463df13553d0aa282741eb756efba76d6d1b5", 
+        "1153": "812b813d09d6fe1ac1e2771724a5b92bffef04b6", 
+        "1159": "6d28be5737a2aa256c981e17ec3e76d7e31e2cc7", 
+        "1179": "d75947705720870fc4209193c89f581bbbc707ec"
+    }, 
+    "show_commit_url": "https://github.com/pyamg/pyamg/commit/", 
+    "tags": {
+        "1.1.0-rc1": 570, 
+        "2.3.0": 893, 
+        "2.3.1": 893, 
+        "2.3.2": 893, 
+        "v2.1-alpha": 647, 
+        "v2.1.0": 703, 
+        "v2.2.0": 779, 
+        "v2.2.1": 857, 
+        "v2.3": 893, 
+        "v2.3.0": 893, 
+        "v3.0.0": 958, 
+        "v3.0.1": 979, 
+        "v3.0.2": 1006, 
+        "v3.1.0": 1153, 
+        "v3.1.1": 1159
+    }
+}
