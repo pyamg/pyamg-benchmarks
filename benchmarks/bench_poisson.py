@@ -37,10 +37,11 @@ class TimeSuite:
         x = self.ml.solve(self.b, x0=self.x0,
                           tol=1e-08, maxiter=100, cycle='V', accel=None)
 
-class PeakMemSuite:
-    pretty_name = "Poisson Memory"
 
-    def setup_cache(self):
+class PeakMemSuite:
+    pretty_name = "Poisson Peak Memory"
+
+    def setup(self):
         n = 1000
         self.A = pyamg.gallery.poisson((n, n), format="csr")
         self.settings = {"B": None,

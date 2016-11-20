@@ -53,9 +53,9 @@
     // the package name by 'pip+', and the package will be installed via
     // pip (with all the conda available packages installed first,
     // followed by the pip installed packages).
-    "matrix": {
-        "numpy": ["1.8", "1.9"],
-    },
+    //"matrix": {
+    //    "numpy": ["1.8", "1.9"],
+    //},
 
     // Combinations of libraries/python versions can be excluded/included
     // from the set to test. Each entry is a dictionary containing additional
